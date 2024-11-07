@@ -24,8 +24,10 @@ public class GradeBook {
             String choice = input.nextLine();
             System.out.println();
             switch(choice) {
-                case "1": // TODO: write a loop that, for each student prints 
-                          //       lname, fname: grade 
+                case "1": 
+                    for (int i = 0; i < students.length; i++) {
+                        System.out.printf("%s, %s: %f%n", students[i].getLastName(), students[i].getFirstName(), students[i].getGrade());
+                    }
                     continue;
                 case "2":
                     System.out.println("Goodbye!");
